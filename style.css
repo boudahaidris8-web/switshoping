@@ -1,0 +1,67 @@
+/* Grid للمنتجات */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* تصميم الكارت */
+.product-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product-card .add-to-cart {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.product-card .add-to-cart:hover {
+  background-color: #0056b3;
+}
+.product-select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-family: inherit;
+}
+
+.product-options {
+    margin-bottom: 10px;
+}
+.modal {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.7); display: flex; align-items: center; justify-content: center; z-index: 1000;
+}
+.modal-content {
+    background: white; padding: 20px; border-radius: 10px; width: 90%; max-width: 400px; text-align: center;
+}
+.modal-content input, .modal-content textarea {
+    width: 100%; margin: 10px 0; padding: 10px; border: 1px solid #ccc; border-radius: 5px;
+}
+.btn-confirm { background: #28a745; color: white; border: none; padding: 10px 20px; cursor: pointer; }
+.btn-cancel { background: #dc3545; color: white; border: none; padding: 10px 20px; cursor: pointer; }
